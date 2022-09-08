@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="assest/images/favicon-32x32.png">
+    <title>Frontend Mentor | Space tourism website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assest/style.css">
+    <!-- <link rel="stylesheet" href="assest/desktopmedia.css"> -->
+    <!-- <link rel="stylesheet" href="assest/tabletmedia.css"> -->
+    <!-- <link rel="stylesheet" href="assest/mobilemedia.css"> -->
+</head>
+
+<body>
+    <!--Background Technology-->
+    <div class="bg-technology">
+        <!--Header-->
+        <header>
+            <div class="container">
+                <div class="header">
+                    <img class="img1" src="assest/images/shared/logo.svg" alt="logo img">
+                    <img class="img2" src="assest/images/Rectangle.png" alt="line img">
+                    <span tabindex="0" class="span1">
+                        <img src="assest/images/shared/icon-hamburger.svg" onclick=" myFirstfunction()" class="ham-img"
+                            id="ham-img" alt="hamburger img">
+                        <img src="assest/images/shared/icon-close.svg" onclick="mysecondfunction()" class="close-img"
+                            id="close-img" alt="close img">
+                    </span>
+                    <nav class="nav" id="h-menu">
+                        <ul class="subheading-3">
+                            <li><a href="index.html"><b>00</b>Home</a></li>
+                            <li><a href="destination.html"><b>01</b>Destination</a></li>
+                            <li><a href="crew.html"><b>02</b>Crew</a></li>
+                            <li class="active"><a href="technology.html"><b>03</b>Technology</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--Main-->
+        <main class="main-d">
+            <!--Technology-->
+            <div class="container">
+                <p class="p1 w-color margin-left"><strong>03</strong> space launch 101</p>
+                <div>
+                    <!--Technology Tabs-->
+                    <div class="technology-content">
+                        <div class="technology-tab">
+                            <button class="tablinks button3 active" onclick="openCity(event, 'tab-1')">1</button>
+                            <button class="tablinks button3" onclick="openCity(event, 'tab-2')">2</button>
+                            <button class="tablinks button3" onclick="openCity(event, 'tab-3')">3</button>
+                        </div>
+                        <div class="technology-tabs-content">
+                            <!--Launch Content-->
+                            <div id="tab-1" class="tabcontent show">
+                                <div class="profile">
+                                    <div class="img-p">
+                                        <img src="assest/images/technology/image-launch-vehicle-portrait.jpg"
+                                            alt="Rocket Launch Image">
+                                    </div>
+                                    <div class="profile-content">
+                                        <p class="p4">The terminology...</p>
+                                        <h3>Launch vehicle</h3>
+                                        <p class="profile-p">
+                                            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to
+                                            carry a
+                                            payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+                                            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres
+                                            tall, it's
+                                            quite an awe-inspiring sight on the launch pad!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--SpacePort Content-->
+                            <div id="tab-2" class="tabcontent">
+                                <div class="profile">
+                                    <div class="img-p img-s">
+                                        <img src="assest/images/technology/image-spaceport-portrait.jpg"
+                                            alt="Space Port Image">
+                                    </div>
+                                    <div class="profile-content">
+                                        <p class="p4">The terminology...</p>
+                                        <h3>Spaceport</h3>
+                                        <p class="profile-p">
+                                            A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+                                            by analogy to the seaport for ships or airport for aircraft. Based in the
+                                            famous Cape Canaveral, our spaceport is ideally situated to take advantage
+                                            of the Earth’s rotation for launch.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Europa Content-->
+                            <div id="tab-3" class="tabcontent">
+                                <div class="profile">
+                                    <div class="img-p img-c">
+                                        <img src="assest/images/technology/image-space-capsule-portrait.jpg"
+                                            alt="Space Capula Image">
+                                    </div>
+                                    <div class="profile-content">
+                                        <p class="p4">The terminology...</p>
+                                        <h3>Space capsule</h3>
+                                        <p class="profile-p">
+                                            A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+                                            capsule to reenter the Earth's atmosphere without wings. Our capsule is
+                                            where
+                                            you'll spend your time during the flight. It includes a space gym, cinema,
+                                            and plenty of other activities to keep you entertained.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        function openCity(evt, TechnologyName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(TechnologyName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        function myFirstfunction() {
+            document.getElementById("h-menu").classList.toggle("show");
+            document.getElementById("close-img").classList.toggle("z-index");
+            document.getElementById("ham-img").classList.toggle("hidden");
+        }
+        function mysecondfunction() {
+            document.getElementById("ham-img").classList.remove("hidden")
+            document.getElementById("h-menu").classList.remove("show");
+            document.getElementById("close-img").classList.remove("z-index");
+        }
+    </script>
+</body>
+
+</html>

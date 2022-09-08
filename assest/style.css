@@ -1,0 +1,1161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --black: rgba(11, 13, 23, 1);
+    --tulip: rgba(208, 214, 249, 1);
+    --white: rgba(255, 255, 255, 1);
+    --background-home-button: rgba(255, 255, 255, 0.1);
+    --background: rgba(255, 255, 255, 0.5);
+    --border-opa: rgba(255, 255, 255, 0.25);
+    --slide-opa: rgba(255, 255, 255, 0.17);
+    --img-border: rgba(56, 59, 75, 1);
+}
+.container{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{ 
+    background-color: var(--black);
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    color: var(--white);
+    height: 100vh;
+}
+h5{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: var(--tulip);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+h1{
+    font-size: 150px;
+    line-height: 150px;
+    text-transform: uppercase;
+    margin: 24px 0;
+    font-weight: 400;
+}
+h2{
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+h3{
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 10px 0 10px 0;
+}
+h4{
+    font-size: 24px;
+    line-height: 23px;
+    font-weight: 400;
+    color: var(--background);
+    text-transform: uppercase;
+}
+.subheading-1{
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.subheading-2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    line-height: 17px;
+    color: var(--tulip);
+    text-transform: uppercase;
+}
+.subheading-3{
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    line-height: 19px;
+}
+p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--tulip);
+}
+/*Header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.img1{
+    background-color: var(--white);
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.img2{
+    background: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: absolute;
+    left: 200px;
+    height: 1px;
+    width: 39%;
+    z-index: 1;
+}
+.span1{
+    position: relative;
+    display: none;
+}
+.close-img{
+    position: absolute;
+    left: -25px;
+    top: -16px;
+    z-index: -1;
+}
+.hidden{
+    display: none;
+}
+/*Header Navigation*/
+.nav{
+    font-family: 'Barlow', sans-serif;
+    position: absolute;
+    right: 0;
+    width: 703px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+.nav ul{
+    width: 85%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav ul li{
+    text-transform: uppercase;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+.nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    font-weight: 400;
+}
+.nav ul li b{
+    margin-right: 5px;
+}
+.active{
+    border-bottom: 3px solid var(--white);
+}
+.nav li:hover{
+    border-bottom: 3px solid var(--background);
+}
+/*Home Page*/
+/*Background Home*/
+.bg-home{
+    background-image: url("images/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: calc(100vh); */
+}
+/*Main*/
+.main{
+    margin-top: 120px;
+    padding-bottom: 79px;
+}
+.home{
+    width: 81%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-content{
+    width: 61%;
+}
+.p1{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 2.725px;
+    text-transform: uppercase;
+}
+.p2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: justify;
+    width: 71%;
+}
+.home-button{
+    width: 330px;
+}
+.button{
+    padding: 105px 50px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.button:hover{
+    box-shadow: 0px 0px 0px 80px rgba(255,255,255,0.1);       
+}
+/*Destination Page*/
+/*Background Destination*/
+.bg-destination{
+    background-image: url("images/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: calc(100vh); */
+}
+/*Main*/
+.main-d{
+    width: 78%;
+    margin: 50px auto 0 auto;
+}
+.w-color{
+    color: var(--white);
+}
+.p1 strong{
+    opacity: 0.25;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.destination-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 86px;
+}
+/* Style the tab */
+.destination-tab {
+    display: flex;
+    margin: 28px 75px 0 0;
+    justify-content: flex-end;
+}
+/* Style the buttons inside the tab */
+.button1{
+    font-family: 'Barlow', sans-serif;
+    padding: 20px 0;
+    border:none;
+    border-radius: unset;
+    background: transparent;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    color: var(--tulip);
+    margin: 0 21px 0 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+/* Change background color of buttons on hover */
+.button1:hover {
+    border-bottom: 1px solid var(--background);
+}
+/* Create an active/current tablink class */
+.button1.active {
+    border-bottom: 3px solid var(--white);
+    color: var(--white);
+} 
+/* Style the tab content */
+.tabcontent{
+    display: none;
+}
+.planets{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.planets-content{
+    width: 38%;
+}
+.bg-moon,
+.bg-mars,
+.bg-europa,
+.bg-titan{
+    background-image: url("images/destination/image-moon.webp");
+    background-repeat: no-repeat;
+    padding: 223px 223px;
+    position: absolute;
+    top: -85px;
+    left: 0;
+}
+.bg-mars{
+    background-image: url("images/destination/image-mars.webp");
+}
+.bg-europa{
+    background-image: url("images/destination/image-europa.webp");
+}
+.bg-titan{
+    background-image: url("images/destination/image-titan.webp");
+}
+.destination-p{
+    font-family: 'Bellefair', serif;
+    margin-bottom: 15px;
+}
+.astronomical-unit{
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid var(--background);
+}
+.days-calculate{
+    margin-left: 43px;
+}
+.show{
+    display: block;
+}
+.boder{
+    border-bottom: 1px solid var(--white);
+}
+/*Crew Page*/
+/*Background Crew*/
+.bg-crew{
+    background-image: url("images/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: calc(100vh);
+    overflow: hidden;
+}
+.crew-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+.slide-flex{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.width-img{
+    width: 35%;
+    position: absolute;
+    right: 30px;
+}
+.d-bottom{
+    bottom: -137px;
+}
+.m-bottom{
+    width: 30%;
+    bottom: -136px;
+    transform: scaleX(-1);
+}
+.v-bottom{
+    bottom: -107px;
+    width: 36%;
+}
+.a-bottom{
+    width: 40%;
+    bottom: -137px;
+}
+/* Number text (1/3 etc) */
+.slidetext {
+  width: 70%;
+  margin-top: 130px;
+}
+.slidetext p{
+    width: 66%;
+    line-height: 30px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 12px 0 0;
+  background-color: var(--slide-opa);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:hover{
+    background-color: var(--background);
+    box-shadow: 0px 1px 2px #000000;
+}
+.dot:active{
+    background-color: var(--white);
+    box-shadow: none;
+}
+.active1{
+    background-color: var(--white);
+    box-shadow: none;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*Technology Page*/
+/*Backgound Technology*/
+.bg-technology{
+    background-image: url("images/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: calc(100vh); */
+}
+.technology-content {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 130px;
+}
+.technology-tab{
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    align-items: center;
+    margin-top: 80px;
+}
+.button3{
+    font-family: 'Barlow', sans-serif;
+    height: 60px;
+    width: 60px;
+    border: 1px solid var(--background);
+    border-radius: 100%;
+    background: transparent;
+    font-size: 26px;
+    color: var(--white);
+    margin: 16px 10px 0 0;
+    cursor: pointer
+}
+.button3:hover{
+    border-color: var(--slide-opa);
+}
+.button3.active{
+    background-color: var(--white);
+    color: var(--black);
+}
+.technology-tabs-content{
+    width: 89%;
+    margin-left: 5px;
+}
+.profile{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.img-p{
+    position: absolute;
+    bottom: 68px;
+    right: 0;
+}
+.img-p img{
+    width: 75%;
+}
+.profile-content{
+    margin-top: 80px;
+}
+.profile-p{
+    width: 43%;
+    font-size: 18px;
+    line-height: 30px;
+}
+.p4{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    line-height: 19px;
+    color: var(--tulip);
+    text-transform: uppercase;
+}
+/*Media*/
+@media only screen and (max-width: 1300px) and (min-width: 992px) {
+    h3{
+        font-size: 35px;
+    }
+    /*Header*/
+    .img2{
+        display: none;
+        width: 38%;
+        left: 139px;
+    }
+    /*Home Page*/
+    .main{
+        margin-top: 66px;
+        padding-bottom: 46px;
+    }
+    
+    .home-button{
+        width: 30%;
+    }
+    .button:hover{
+        box-shadow: 0px 0px 0px 70px rgb(255 255 255 / 10%);
+    }
+    /*Destination Page*/
+    .bg-destination{
+        padding-bottom: 29px;
+    }
+    .main-d{
+        margin-top: 20px;
+    }
+    .destination-content{
+        padding-bottom: 0;
+    }
+    .bg-moon,
+    .bg-mars,
+    .bg-europa,
+    .bg-titan{
+        width: 40%;
+        padding: 170px 170px;
+        top: -33px;
+        left: 0;
+        background-position: center;
+        background-size: contain;
+    }
+    .planets-content{
+        width: 40%;
+    }
+    /*Crew Page*/
+    .bg-crew{
+        background-position: center;
+    }
+    .width-img{
+        bottom: -109px;
+        width: 31%;
+        right: 0;
+    }
+    .m-bottom{
+        width: 25%;
+        bottom: -79px;
+    }
+    .v-bottom{
+        bottom: -79px;
+        width: 30%;
+    }
+    .a-bottom{
+        width: 34%;
+        bottom: -80px;
+    }
+    .slidetext p{
+        width: 97%;
+    }
+    /*Technology Page*/
+    .technology-content{
+        justify-content: flex-end;
+        padding-bottom: 73px
+    }
+    .technology-tab{
+        margin-top: 50px;
+    }
+    .technology-tabs-content{
+        margin-left: 12px;
+    }
+    .profile-content{
+        margin-top: 50px;
+    }
+    .profile-p{
+        width: 90%;
+    }
+    .img-p{
+        position: unset;
+    }
+    .img-p img{
+        width: unset;
+        height: 60vh;
+    }
+}
+@media only screen and (max-width:991px) and (min-width: 501px) {
+    h1{
+        font-size: 130px;
+        line-height: 130px;
+        margin: 20px;
+    }
+    h2 {
+        font-size: 80px;
+        line-height: 92px;
+    }
+    h3{
+        font-size: 40px;
+        line-height: 46px;
+        margin: 16px 0;
+    }
+    h4{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    /*Header*/
+    .header{
+        padding-top: 0;
+    }
+    .img1{
+        margin: 0 0 0 30px;
+    }
+    .img2{
+        display: none;
+    }
+    .nav{
+        position: unset;
+        width: 80%;
+    }
+    .nav ul {
+        width: 90%;
+        justify-content: space-between;
+    }
+    .nav ul li{
+        padding: 25px 0;
+    }
+    .nav ul li a{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .nav ul li a b{
+        display: none;
+    }
+    .container{
+        padding: 0;
+    }
+    /*Home Page*/
+    .bg-home,
+    .bg-destination,
+    .bg-crew,
+    .bg-technology{
+        background-image: url("images/home/background-home-tablet.jpg");
+        background-position: bottom;
+        background-attachment: unset;
+        background-size: cover;
+    }
+    .main{
+        margin-top: 110px;
+        padding-bottom: 78px;
+    }
+    .home{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content{
+        width: 100%;
+        text-align: center;
+    }
+    .p1{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    .p2{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        width: 45%;
+        margin: 0 auto;
+    }
+    .home-button{
+        width: 100%;
+        margin: 156px auto 0 auto;
+        text-align: center;
+    }
+    .button {
+        padding: 98px 45px;
+        font-size: 22px;
+    }
+    .button:hover {
+        box-shadow: 0px 0px 0px 58px rgb(255 255 255 / 10%);
+    }
+    /*Destination Page*/
+    .bg-destination{
+        background-image: url("images/destination/background-destination-tablet.jpg");
+    }
+    /*Main-D*/
+    .main-d{
+        width: 93%;
+        margin-top: 64px;
+        padding-bottom: 62px;
+    }
+    .destination-content{
+        align-items: center;
+        position: relative;
+    }
+    .destination-tab{
+        margin: 470px auto 0 auto;
+        width: 61%;
+        justify-content: space-between;
+    }
+    .bg-moon,
+    .bg-mars,
+    .bg-europa,
+    .bg-titan{
+        padding: 223px;
+        background-position: center;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+    }
+    .planets{
+        position: unset;
+    }
+    .planets-content {
+        width: 64%;
+        margin: 47px auto 0 auto;
+        text-align: center;
+    }
+    .destination-p{
+        width: 100%;
+        margin-bottom: 49px;
+    }
+    .astronomical-unit{
+        justify-content: space-around;
+        padding-top: 28px;
+    }
+    .subheading-1{
+        margin-top: 12px;
+    }
+    /*Crew Page*/
+    .bg-crew{
+        background-image: url("images/crew/background-crew-tablet.jpg");
+        background-position: unset;
+        height: 1000px;
+        padding-bottom: 100px;
+    }
+    .slide-flex{
+        width: 100%;
+        flex-direction: column;
+    }
+    .slidetext{
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .slidetext p{
+        width: 92%;
+        margin: 0 auto;
+    }
+    .width-img{
+        width: 44%;
+        margin-top: 160px;
+        position: unset;
+    }
+    .m-bottom{
+        width: 40%;
+        transform: unset;
+    }
+    .v-bottom{
+        width: 50%;
+    }
+    .a-bottom{
+        width: 55%;
+    }
+    .dot-slide{
+        margin: 0;
+        position: absolute;
+        top: 330px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    /*Technology Page*/
+    .bg-technology{
+        background-image: url("images/technology/background-technology-tablet.jpg");
+    }
+    .technology-content {
+        flex-direction: column;
+        padding-bottom: 35px;
+        position: relative;
+    }
+    .technology-tab {
+        flex-direction: row;
+        width: 50%;
+        margin: 500px auto 44px auto;
+        justify-content: space-between;
+    }
+    .button3 {
+        height: 60px;
+        width: 60px;
+        font-size: 24px;
+        margin: 0;
+    }
+    .technology-tabs-content{
+        width: 100%;
+        margin: 0;
+    }
+    .profile{
+        flex-direction: column;
+    }
+    .img-p{
+        background-image: url("images/technology/image-launch-vehicle-landscape.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        left: 0;
+        height: 74vh;
+    }
+    .img-c{
+        background-image: url("images/technology/image-space-capsule-landscape.jpg");
+    }
+    .img-s{
+        background-image: url("images/technology/image-spaceport-landscape.jpg");
+    }
+    .img-p img{
+        display: none;
+    }
+    .profile-content{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .profile-p {
+        width: 59%;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media only screen and (max-width:500px) and (min-width: 320px) {
+    body{
+        position: relative;
+    }
+    h1 {
+        font-size: 80px;
+        line-height: 100px;
+        margin: 16px 0;
+    }
+    h2 {
+        font-size: 56px;
+        line-height: 64.18px;
+        margin: 31px 0 1px 0;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 28px;
+        margin: 9px 0 16px 0;
+    }
+    h4{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .container{
+        padding: 0;
+    }
+    /*Header*/
+    .header{
+        padding-top: 0;
+    }
+    .img1{
+        width: 40px;
+        height: 40px;
+        margin: 24px 0 0 24px;
+    }
+    .img2{
+        display: none;
+    }
+    
+    .span1{
+        display: block;
+        margin: 20px 16px 0 0;
+    }
+    .nav{
+        flex-direction: column;
+        width: 65%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .show{
+        z-index: 1;
+    }
+    .show{
+        display: block;
+    }
+    .z-index{
+        z-index: 9999;
+    }
+    .nav ul{
+        width: 84%;
+        margin: 140px auto 0 auto;
+        flex-direction: column;
+    }
+    .active{
+        border-right: 3px solid var(--white);
+        border-bottom: none;
+    }
+    .nav ul li:hover {
+        border-right: 3px solid var(--background);
+        border-bottom: none;
+    }
+    .nav ul li{
+        padding: 0;
+    }
+    .nav ul li a {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        line-height: 19px;
+        margin: 0 0 20px 0;
+    }
+    .nav ul li a b{
+        display: unset;
+        margin-right: 12px;
+    }
+    /*Home Page*/
+    /*Home background*/
+    .bg-home {
+        background-image: url("images/home/background-home-mobile.jpg");
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: unset;
+    }
+    .main{
+        margin-top: 48px;
+    }
+    .home{
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-content{
+        width: 100%;
+        text-align: center;
+    }
+    .p1{
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 2.7px;
+    }
+    .p2{
+        font-size: 15px;
+        line-height: 25px;
+        width: unset;
+        text-align: center;
+    }
+    .home-button{
+        width: unset;
+        margin: 60px 0 0 0;
+    }
+    .button{
+        padding: 65px 25px;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.25px;
+    }
+    .button:hover {
+        box-shadow: 0px 0px 0px 38px rgb(255 255 255 / 10%);
+    }
+    /*Destination Page*/
+    .bg-destination{
+        background-image: url("images/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: unset;
+    }
+    .destination-content{
+        position: relative;
+    }
+    .destination-tab{
+        width: 100%;
+        margin: 240px auto 0 auto;
+        justify-content: space-evenly;
+    }
+    .main-d{
+        width: 100%;
+        margin-top: 24px;
+        text-align: center;
+    }
+    .p1 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;
+    }
+    .p1 strong{
+        margin-right: 18px;
+    }
+    .bg-moon, 
+    .bg-mars, 
+    .bg-europa, 
+    .bg-titan {
+        padding: 110px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        left: 0;
+        background-position: center;
+        background-size: contain;
+    }
+    .planets{
+        position: unset;
+    }
+    .planets-content{
+        width: 65%;
+        margin: 0 auto;
+        margin-top: 0;
+    }
+    button.tablinks.button1.active {
+        border-right: none;
+    }
+    .button1 {
+        line-height: 16.8px;
+        font-size: 14px;
+        letter-spacing: 2.36px;
+        margin: 0;
+    }
+    .destination-p {
+        width: 93%;
+        margin: 0 auto 32px auto;
+    }
+    .astronomical-unit{
+        flex-direction: column;
+        padding: 32px 0 0 0;
+    }
+    .days-calculate{
+        margin: 32px 0 0 0;
+    }
+    .subheading-1{
+        margin-top: 12px;
+    }
+    /*Crew Page*/
+    .bg-crew{
+        background-image: url("images/crew/background-crew-mobile.jpg");
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: unset;
+        height: unset;
+    }
+    .crew-content{
+        padding-bottom: 52px;
+    }
+    .slide-flex{
+        width: 100%;
+        flex-direction: column-reverse;
+        position: unset;
+    }
+    .width-img,
+    .a-bottom,
+    .v-bottom,
+    .m-bottom{
+        width: 230px;
+        height: 250px;
+        position: unset;
+        margin-top: 40px;
+    }
+    .slidetext{
+        width: 100%;
+        margin: 90px auto 0 auto;
+        position: relative;
+    }
+    .slidetext p{
+        margin: 0 auto;
+    }
+    .dot-slide{
+        position: absolute;
+        top: 320px;
+        right: 0;
+        left: 0;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    /*Technology Page*/
+    .bg-technology{
+        background-image: url("images/technology/background-technology-mobile.jpg");
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: unset;
+    }
+    .img-p{
+        background-image: url("images/technology/image-launch-vehicle-landscape.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        left: 0;
+        height: calc(25vh);        
+    }
+    .img-s{
+        background-image: url("images/technology/image-spaceport-landscape.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        left: 0;
+        height: calc(25vh);        
+    }
+    .img-c{
+        background-image: url("images/technology/image-space-capsule-landscape.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        left: 0;
+        height: calc(25vh);        
+    }
+    .img-p img{
+        display: none;
+    }
+    .technology-content{
+        flex-direction: column;
+        position: relative;
+    }
+    .technology-tab{
+        width: 65%;
+        margin: 190px auto 26px auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .technology-tabs-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .button3 {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        margin: 0;
+        line-height: 18.34px;
+        letter-spacing: 1px;
+    }
+    .p4 {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+        line-height: 16px;
+    }
+    .profile-content{
+        margin-top: 22px;
+    }
+    .profile-p {
+        width: 88%;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

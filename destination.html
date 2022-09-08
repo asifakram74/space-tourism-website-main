@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="assest/images/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assest/style.css">
+  <link rel="stylesheet" href="assest/media.css">
+  <!-- <link rel="stylesheet" href="assest/desktopmedia.css"> -->
+  <!-- <link rel="stylesheet" href="assest/tabletmedia.css"> -->
+  <!-- <link rel="stylesheet" href="assest/mobilemedia.css"> -->
+</head>
+
+<body>
+  <!--Background Destination-->
+  <div class="bg-destination">
+    <!--Header-->
+    <header>
+      <div class="container">
+        <div class="header">
+          <img class="img1" src="assest/images/shared/logo.svg" alt="logo img">
+          <img class="img2" src="assest/images/Rectangle.png" alt="line img">
+          <span tabindex="0" class="span1">
+            <img src="assest/images/shared/icon-hamburger.svg" onclick=" myFirstfunction()" class="ham-img" id="ham-img"
+              alt="hamburger img">
+            <img src="assest/images/shared/icon-close.svg" onclick="mysecondfunction()" class="close-img" id="close-img"
+              alt="close img">
+          </span>
+          <nav class="nav" id="h-menu">
+            <ul class="subheading-3">
+              <li><a href="index.html"><b>00</b>Home</a></li>
+              <li class="active"><a href="destination.html"><b>01</b>Destination</a></li>
+              <li><a href="crew.html"><b>02</b>Crew</a></li>
+              <li><a href="technology.html"><b>03</b>Technology</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Main-->
+    <main class="main-d">
+      <!--Destination-->
+      <div class="container">
+        <p class="p1 w-color"><strong>01</strong> pick your destination</p>
+        <div>
+          <!--Destination Tabs-->
+          <div class="destination-content">
+            <div class="destination-tab">
+              <button class="tablinks button1 active" onclick="openPlanet(event, 'moon')">moon</button>
+              <button class="tablinks button1" onclick="openPlanet(event, 'mars')">mars</button>
+              <button class="tablinks button1" onclick="openPlanet(event, 'europa')">europa</button>
+              <button class="tablinks button1" onclick="openPlanet(event, 'titan')">titan</button>
+            </div>
+            <div>
+              <!--Moon Content-->
+              <div id="moon" class="tabcontent show">
+                <div class="planets">
+                  <div class="bg-moon"></div>
+                  <div class="planets-content">
+                    <h2>moon</h2>
+                    <p class="destination-p">
+                      See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                      regain perspective and come back refreshed. While you’re there, take in some history
+                      by visiting the Luna 2 and Apollo 11 landing sites.
+                    </p>
+                    <div class="astronomical-unit">
+                      <div>
+                        <p class="subheading-2">Avg. distance</p>
+                        <p class="subheading-1">384,400 km</p>
+                      </div>
+                      <div class="days-calculate">
+                        <p class="subheading-2">Est. travel time</p>
+                        <p class="subheading-1">3 days</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Mars Content-->
+              <div id="mars" class="tabcontent">
+                <div class="planets">
+                  <div class="bg-mars"></div>
+                  <div class="planets-content">
+                    <h2>mars</h2>
+                    <p class="destination-p">
+                      Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
+                      the tallest planetary mountain in our solar system. It’s two and a half times
+                      the size of Everest!
+                    </p>
+                    <div class="astronomical-unit">
+                      <div>
+                        <p class="subheading-2">Avg. distance</p>
+                        <p class="subheading-1">225 mil. km</p>
+                      </div>
+                      <div class="days-calculate">
+                        <p class="subheading-2">Est. travel time</p>
+                        <p class="subheading-1">9 months</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Europa Content-->
+              <div id="europa" class="tabcontent">
+                <div class="planets">
+                  <div class="bg-europa"></div>
+                  <div class="planets-content">
+                    <h2>europa</h2>
+                    <p class="destination-p">
+                      The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+                      winter lover’s dream. With an icy surface, it’s perfect for a bit of
+                      ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+                    </p>
+                    <div class="astronomical-unit">
+                      <div>
+                        <p class="subheading-2">Avg. distance</p>
+                        <p class="subheading-1">628 mil. km</p>
+                      </div>
+                      <div class="days-calculate">
+                        <p class="subheading-2">Est. travel time</p>
+                        <p class="subheading-1">3 years</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Titan Content-->
+              <div id="titan" class="tabcontent">
+                <div class="planets">
+                  <div class="bg-titan"></div>
+                  <div class="planets-content">
+                    <h2>titan</h2>
+                    <p class="destination-p">
+                      The only moon known to have a dense atmosphere other than Earth, Titan
+                      is a home away from home (just a few hundred degrees colder!). As a
+                      bonus, you get striking views of the Rings of Saturn.
+                    </p>
+                    <div class="astronomical-unit">
+                      <div>
+                        <p class="subheading-2">Avg. distance</p>
+                        <p class="subheading-1">1.6 bil. km</p>
+                      </div>
+                      <div class="days-calculate">
+                        <p class="subheading-2">Est. travel time</p>
+                        <p class="subheading-1">7 years</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!--JS-->
+  <script>
+    function openPlanet(evt, PlanetName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(PlanetName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    function myFirstfunction() {
+      document.getElementById("h-menu").classList.toggle("show");
+      document.getElementById("close-img").classList.toggle("z-index");
+      document.getElementById("ham-img").classList.toggle("hidden");
+    }
+    function mysecondfunction() {
+      document.getElementById("ham-img").classList.remove("hidden")
+      document.getElementById("h-menu").classList.remove("show");
+      document.getElementById("close-img").classList.remove("z-index");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+@media only screen and (max-width:1300px){
+    /*Header*/
+    .img2{
+        width: 38%;
+        left: 139px;
+    }
+    /*Home Page*/
+    .bg-home,
+    .bg-destination,
+    .bg-crew,
+    .bg-technology{
+        background-position: unset;
+        background-attachment: unset;
+    }
+    .main{
+        margin-top: 66px;
+        padding-bottom: 46px;
+    }
+    .main-d{
+        margin-top: 20px;
+    }
+    .button:hover{
+        box-shadow: 0px 0px 0px 70px rgb(255 255 255 / 10%);
+    }
+    /*Destination Page*/
+    .bg-destination{
+        padding-bottom: 29px;
+    }
+    .destination-content{
+        padding-bottom: 0;
+    }
+    .bg-moon,
+    .bg-mars,
+    .bg-europa,
+    .bg-titan{
+        padding: 192px;
+        background-size: contain;
+        top: -82px;
+        left: 40px;
+    }
+    .planets-content{
+        width: 40%;
+    }
+    /*Crew Page*/
+    .bg-crew{
+        background-position: center;
+    }
+    .width-img{
+        bottom: -79px;
+        width: 31%;
+    }
+    .m-bottom{
+        width: 25%;
+        bottom: -79px;
+    }
+    .v-bottom{
+        bottom: -49px;
+        width: 30%;
+    }
+    .a-bottom{
+        width: 34%;
+        bottom: -80px;
+    }
+    /*Technology Page*/
+    .technology-content{
+        padding-bottom: 73px
+    }
+    .technology-tab{
+        margin-top: 50px;
+    }
+    .technology-tabs-content{
+        margin-left: 12px;
+    }
+    .profile-content{
+        margin-top: 50px;
+    }
+    .img-p{
+        top: 121px;
+        bottom: unset;
+    }
+    .img-p img{
+        width: 73%;
+    }
+}
+@media only screen and (max-width:1350px){
+    /*Header*/
+    .img2{
+        width: 37%;
+    }
+}
+@media only screen and (max-width:1330px){
+    /*Header*/
+    .img2{
+        width: 38%;
+    }
+}
+@media only screen and (max-width:1250px){
+    /*Header*/
+    .nav{
+        width: 660px;
+    }
+    .img2{
+        width: 39%;
+        left: 135px;
+    }
+    /*Destination Page*/      
+    .planets-content{
+        width: 41%;
+    }
+}
+@media only screen and (max-width:1230px){
+    /*Header*/
+    .img2{
+        width: 37%;
+    }
+}
+@media only screen and (max-width:1200px){
+    h2{
+        margin: 5px 0;
+    }
+    /*Header*/
+    .img2{
+        width: 38%;
+        left: 131px;
+    }
+    .nav{
+        width: 640px;
+    }
+    /*Destination Page*/
+    .bg-destination{
+        padding-bottom: 39px;
+    }
+    .planets-content{
+        width: 44%;
+    }
+    /*Crew Page*/
+    .slidetext{
+        margin-top: 80px;
+    }
+    .slidetext p{
+        width: 78%;
+    }
+    .width-img{
+        bottom: -129px;
+        width: 36%;
+    }
+    .m-bottom{
+        width: 29%;
+        bottom: -129px;
+    }
+    .v-bottom{
+        bottom: -100px;
+        width: 36%;
+    }
+    .a-bottom{
+        width: 43%;
+        bottom: -129px;
+    }
+}
+@media only screen and (max-width:1180px){
+    /*Header*/
+    .img2{
+        width: 36%;
+        left: 131px;
+    }
+}
+@media only screen and (max-width:1150px){
+    h1{
+        font-size: 140px;
+        line-height: 130px;
+        margin: 15px 0;
+    }
+    /*Header*/
+    .img2{
+        left: 122px;
+        width: 36%;
+    }
+    .main{
+        padding-bottom: 52px;
+    }
+    /*Technology Page*/
+    .technology-content{
+        padding-bottom: 43px;
+    }
+    /*Destination Page*/
+    .bg-moon,
+    .bg-mars,
+    .bg-europa,
+    .bg-titan{
+        left: 0;
+    }
+    .planets-content{
+        width: 48%;
+    }
+    /*Technology Page*/
+    .technology-content{
+        padding-bottom: 103px;
+    }
+    .profile-content{
+        width: 55%;
+    }
+    .profile-p{
+        width: 100%;
+    }
+    .img-p{
+        right: unset;
+        left: 640px;
+    }
+}
+@media only screen and (max-width:1130px){
+    /*Header*/
+    .img2{
+        width: 34%;
+    }
+}
+@media only screen and (max-width:1100px){
+    /*Header*/
+    .img2{
+        left: 125px;
+        width: 33%;
+    }
+}
+@media only screen and (max-width:1080px){
+    /*Header*/
+    .img2{
+        width: 31%;
+    }
+}
+@media only screen and (max-width:1050px){
+    h1{
+        font-size: 130px;
+        line-height: 110px;
+    }
+    .main{
+        padding-bottom: 104px;
+    }
+    /*Header*/
+    .nav{
+        width: 610px;
+    }
+    .nav ul{
+        width: 90%;
+    }
+    .img2{
+        width: 32%;
+        left: 117px;
+    }
+    /*Home Page*/
+    .home-button{
+        width: 229px;
+    }
+    .p2{
+        width: 97%;
+    }
+    .main-d{
+        width: 85%;
+    }
+    /*Destination Page*/
+    .destination-tab{
+        margin-right: 50px;
+    }
+    .bg-moon, 
+    .bg-mars, 
+    .bg-europa,
+    .bg-titan{
+        padding: 170px;
+        top: -60px;
+    }
+    .planets-content{
+        width: 46%;
+    }
+    /*Technology Page*/
+    .technology-content{
+        padding-bottom: 73px;
+    }
+    .img-p{
+        top: 145px;
+    }
+}
+@media only screen and (max-width:1030px){
+    /*Header*/
+    .img2{
+        width: 30%;
+    }
+}

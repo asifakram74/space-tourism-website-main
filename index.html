@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="assest/images/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assest/style.css">
+</head>
+
+<body>
+  <!--Background Image-->
+  <div class="bg-home">
+    <!--Header-->
+    <header>
+      <div class="container">
+        <div class="header">
+          <img class="img1" src="assest/images/shared/logo.svg" alt="logo img">
+          <img class="img2" src="assest/images/Rectangle.png" alt="line img">
+          <span tabindex="0" class="span1">
+            <img src="assest/images/shared/icon-hamburger.svg" onclick=" myFirstfunction()" class="ham-img" id="ham-img"
+              alt="hamburger img">
+            <img src="assest/images/shared/icon-close.svg" onclick="mysecondfunction()" class="close-img" id="close-img"
+              alt="close img">
+          </span>
+          <nav class="nav" id="h-menu">
+            <ul class="subheading-3">
+              <li class="active"><a href="index.html"><b>00</b>Home</a></li>
+              <li><a href="destination.html"><b>01</b>Destination</a></li>
+              <li><a href="crew.html"><b>02</b>Crew</a></li>
+              <li><a href="technology.html"><b>03</b>Technology</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Main-->
+    <main class="main">
+      <!--Home-->
+      <div>
+        <div class="container">
+          <div class="home">
+            <div class="home-content">
+              <p class="p1">So, you want to travel to</p>
+              <h1>Space</h1>
+              <p class="p2">
+                Let’s face it; if you want to go to space, you might as well genuinely go to
+                outer space and not hover kind of on the edge of it. Well sit back, and relax
+                because we’ll give you a truly out of this world experience!
+              </p>
+            </div>
+            <div class="home-button">
+              <button class="button">explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!--JS-->
+  <script>
+    function myFirstfunction() {
+      document.getElementById("h-menu").classList.toggle("show");
+      document.getElementById("close-img").classList.toggle("z-index");
+      document.getElementById("ham-img").classList.toggle("hidden");
+    }
+    function mysecondfunction() {
+      document.getElementById("ham-img").classList.remove("hidden")
+      document.getElementById("h-menu").classList.remove("show");
+      document.getElementById("close-img").classList.remove("z-index");
+    }
+  </script>
+</body>
+
+</html>

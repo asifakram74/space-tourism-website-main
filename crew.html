@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="assest/images/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assest/style.css">
+  <!-- <link rel="stylesheet" href="assest/desktopmedia.css"> -->
+  <!-- <link rel="stylesheet" href="assest/tabletmedia.css"> -->
+  <!-- <link rel="stylesheet" href="assest/mobilemedia.css"> -->
+</head>
+
+<body>
+  <!--Background Crew-->
+  <div class="bg-crew">
+    <!--Header-->
+    <header>
+      <div class="container">
+        <div class="header">
+          <img class="img1" src="assest/images/shared/logo.svg" alt="logo img">
+          <img class="img2" src="assest/images/Rectangle.png" alt="line img">
+          <span tabindex="0" class="span1">
+            <img src="assest/images/shared/icon-hamburger.svg" onclick=" myFirstfunction()" class="ham-img" id="ham-img"
+              alt="hamburger img">
+            <img src="assest/images/shared/icon-close.svg" onclick="mysecondfunction()" class="close-img" id="close-img"
+              alt="close img">
+          </span>
+          <nav class="nav" id="h-menu">
+            <ul class="subheading-3">
+              <li><a href="index.html"><b>00</b>Home</a></li>
+              <li><a href="destination.html"><b>01</b>Destination</a></li>
+              <li class="active"><a href="crew.html"><b>02</b>Crew</a></li>
+              <li><a href="technology.html"><b>03</b>Technology</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Main-->
+    <main class="main-d">
+      <!--Crew-->
+      <div class="container">
+        <p class="p1 w-color margin-left"><strong>02</strong> meet your crew</p>
+        <div>
+          <!--Crew Slide-->
+          <div class="crew-content">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="slide-flex">
+                  <div class="slidetext">
+                    <h4>Commander</h4>
+                    <h3>Douglas Hurley</h3>
+                    <p>
+                      Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+                      and former NASA astronaut. He launched into space for the third time as
+                      commander of Crew Dragon Demo-2.
+                    </p>
+                  </div>
+                  <img src="assest/images/crew/image-douglas-hurley.png" alt="Commander Image"
+                    class="width-img d-bottom">
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="slide-flex">
+                  <div class="slidetext">
+                    <h4>Mission Specialist</h4>
+                    <h3>Mark Shuttleworth</h3>
+                    <p>
+                      Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+                      the Linux-based Ubuntu operating system. Shuttleworth became the first South
+                      African to travel to space as a space tourist.
+                    </p>
+                  </div>
+                  <img src="assest/images/crew/image-mark-shuttleworth.png" alt="Specialist Image"
+                    class="width-img m-bottom">
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="slide-flex">
+                  <div class="slidetext">
+                    <h4>Pilot</h4>
+                    <h3>Victor Glover</h3>
+                    <p>
+                      Pilot on the first operational flight of the SpaceX Crew Dragon to the
+                      International Space Station. Glover is a commander in the U.S. Navy where
+                      he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+                      station systems flight engineer.
+                    </p>
+                  </div>
+                  <img src="assest/images/crew/image-victor-glover.png" alt="Pilot Image" class="width-img v-bottom">
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="slide-flex">
+                  <div class="slidetext">
+                    <h4>Flight Engineer</h4>
+                    <h3>Anousheh Ansari</h3>
+                    <p>
+                      Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+                      Ansari was the fourth self-funded space tourist, the first self-funded woman to
+                      fly to the ISS, and the first Iranian in space.
+                    </p>
+                  </div>
+                  <img src="assest/images/crew/image-anousheh-ansari.png" alt="Engineer Image"
+                    class="width-img a-bottom">
+                </div>
+              </div>
+
+              <br>
+
+              <div class="dot-slide">
+                <span class="dot active1" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!--JS-->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active1", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active1";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    function myFirstfunction() {
+      document.getElementById("h-menu").classList.toggle("show");
+      document.getElementById("close-img").classList.toggle("z-index");
+      document.getElementById("ham-img").classList.toggle("hidden");
+    }
+    function mysecondfunction() {
+      document.getElementById("ham-img").classList.remove("hidden");
+      document.getElementById("h-menu").classList.remove("show");
+      document.getElementById("close-img").classList.remove("z-index");
+    }
+  </script>
+</body>
+
+</html>
